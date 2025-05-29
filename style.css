@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --primary-clr: #ffe8ce;
+  --secondary-clr: #fff1e1;
+  --text-clr: #000;
+  --text-second-clr: #fff;
+  --para-text: #2b2b2b;
+  --button-clr: #633d11;
+}
+body {
+  color: var(--text-clr);
+  background: var(--primary-clr);
+}
+html,
+body {
+  overflow-x: hidden;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 1.75rem;
+}
+p {
+  font-size: 1rem;
+  color: var(--para-text);
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--text-clr);
+}
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1180px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.hover-link {
+  transition: 0.2s;
+}
+.hover-link:hover {
+  color: var(--button-clr);
+}
+.primary-btn {
+  padding: 8px 30px;
+  background: var(--button-clr);
+  border-radius: 30px;
+  color: var(--text-second-clr);
+  overflow: hidden;
+  transition: 0.2s;
+}
+.primary-btn:hover {
+  transform: scale(1.1);
+  color: var(--text-clr);
+  background: transparent;
+  border: 2px solid var(--button-clr);
+}
+.para-box {
+  max-width: 700px;
+  margin-inline: auto;
+}
+/* Top Banner */
+.top-banner {
+  background: var(--primary-clr);
+  padding-block: 0.8rem;
+}
+.banner-con {
+  justify-content: space-between;
+}
+.banner-left span {
+  color: var(--text-clr);
+}
+.banner-menu {
+  gap: 2rem;
+}
+.banner-menu i {
+  color: var(--button-clr);
+  margin-right: 10px;
+}
+.banner-socials i {
+  color: var(--button-clr);
+  transition: 0.2s;
+}
+.banner-socials {
+  gap: 20px;
+  margin-left: 50px;
+}
+.banner-socials i:hover {
+  color: var(--text-clr);
+}
+
+/* nav */
+nav {
+  background: var(--secondary-clr);
+  padding-block: 1rem;
+}
+.main-nav {
+  justify-content: space-between;
+}
+.nav-links {
+  gap: 3rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Home */
+.home-section {
+  background: url("images/header-bg.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.home-con {
+  position: absolute;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 700px;
+  max-height: 700px;
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  backdrop-filter: blur(8px);
+}
+.home-con h1 {
+  line-height: 1;
+  margin-block: 1rem;
+}
+.home-con .para-letter-spacing {
+  letter-spacing: 5px;
+}
+.home-con .primary-btn {
+  width: 40%;
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Choose */
+.choose-section {
+  padding-block: 3rem;
+}
+.choose-heading {
+  text-align: center;
+}
+.fa-leaf {
+  font-size: 3rem;
+  background: linear-gradient(to bottom, #5c3809ef, #ffca84ef);
+  background-clip: text;
+  color: transparent;
+}
+.choose-area {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 5rem;
+  margin-top: 3rem;
+}
+.choose-item {
+  width: 350px;
+  height: 500px;
+  overflow: hidden;
+  background: var(--secondary-clr);
+}
+.choose-item img {
+  width: 100%;
+}
+.choose-detail {
+  padding: 0.8rem;
+  text-align: center;
+}
+.choose-detail p {
+  margin-block: 1rem;
+}
+
+/* Visit */
+.visit-section {
+  background: var(--secondary-clr);
+  padding-block: 5rem;
+}
+.visit-con {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+.visit-left {
+  font-style: italic;
+  max-width: 25vw;
+}
+.visit-left p:nth-child(1) {
+  color: rgba(163, 161, 161, 0.8);
+}
+.visit-left p {
+  margin-bottom: 2rem;
+}
+.visit-left .primary-btn {
+  font-size: 2rem;
+  max-width: 60%;
+  text-align: center;
+}
+.visit-box {
+  gap: 10px;
+}
+.visit-box img:nth-child(1) {
+  width: 330px;
+  height: 390px;
+}
+.visit-box img:nth-child(2) {
+  width: 200px;
+ height: 390px;
+}
