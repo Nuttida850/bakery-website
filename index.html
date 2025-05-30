@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bakery Shop</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media-queries.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -56,16 +57,18 @@
         <div class="container main-nav flex">
           <div class="logo"><h2>Bakery</h2></div>
           <ul class="nav-links flex">
-            <li><a href="#" class="hover-link">Home</a></li>
-            <li><a href="#" class="hover-link">Menu</a></li>
-            <li><a href="#" class="hover-link">Services</a></li>
-            <li><a href="#" class="hover-link">About Us</a></li>
-            <li><a href="#" class="hover-link">Contact Us</a></li>
+            <li><a href="#home" class="hover-link">Home</a></li>
+            <li><a href="#menu" class="hover-link">Menu</a></li>
+            <li><a href="#services" class="hover-link">Services</a></li>
+            <li><a href="#about" class="hover-link">About Us</a></li>
+            <li><a href="#contact" class="hover-link">Contact Us</a></li>
             <li><a href="#" class="primary-btn">Order Now</a></li>
           </ul>
         </div>
+        <div id="toggle"><i class="fa-solid fa-bars"></i></div>
+        <div id="close"><i class="fa-solid fa-xmark"></i></div>
       </nav>
-      <section class="home-section">
+      <section class="home-section" id="home">
         <div class="container">
           <div class="home-con flex">
             <p class="para-letter-spacing">
@@ -164,5 +167,68 @@
         </div>
       </div>
     </section>
+    <section class="sweets-section">
+      <div class="container sweets-area">
+        <div class="sweets-item">
+          <img src="images/sweets1.jpg" alt="" />
+        </div>
+        <div class="sweets-item">
+          <img src="images/sweets2.jpg" alt="" />
+        </div>
+        <div class="sweets-item">
+          <img src="images/sweets3.jpg" alt="" />
+        </div>
+        <div class="sweets-item">
+          <img src="images/sweets4.jpg" alt="" />
+        </div>
+        <div class="sweets-item flex">
+          <h3>Capture Baking</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, sit
+            iste. Neque, amet! Sunt ut suscipit repellat. Voluptas, mollitia
+            harum.
+          </p>
+        </div>
+        <div class="sweets-item flex">
+          <h3>Enjoy Sweets</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+            optio possimus nobis nesciunt ipsum amet.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container footer-area flex">
+        <div class="logo"><h2>Bakery</h2></div>
+        <ul class="footer-links flex">
+          <li><a href="#" class="hover-link">Home</a></li>
+          <li><a href="#" class="hover-link">Menu</a></li>
+          <li><a href="#" class="hover-link">Services</a></li>
+          <li><a href="#" class="hover-link">About Us</a></li>
+          <li><a href="#" class="hover-link">Contact Us</a></li>
+        </ul>
+        <ul class="footer-socials flex">
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <div class="sub-footer">
+      <div class="container">
+        <p>Copyright &copy; 2025 All RIghts Reserved</p>
+      </div>
+    </div>
   </body>
+  <script src="app.js"></script>
 </html>
