@@ -19,6 +19,9 @@ body {
   color: var(--text-clr);
   background: var(--primary-clr);
 }
+html {
+  scroll-behavior: smooth;
+}
 
 h1 {
   font-size: 5rem;
@@ -68,7 +71,6 @@ ul {
 }
 .primary-btn:hover {
   color: var(--text-clr);
-  transform: scale(1.1);
   background: transparent;
   border: 2px solid var(--button-clr);
 }
@@ -76,7 +78,27 @@ ul {
   max-width: 700px;
   margin-inline: auto;
 }
-
+/* progress */
+#progress {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: var(--button-clr);
+  border-radius: 50%;
+  display: none;
+  place-items: center;
+  cursor: pointer;
+}
+#progress-value {
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background: var(--text-second-clr);
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+}
 /* Top Banner */
 .top-banner {
   background: var(--primary-clr);
@@ -137,6 +159,7 @@ nav {
   width: 100%;
   height: 100vh;
   position: relative;
+  z-index: -1;
 }
 .home-con {
   position: absolute;
